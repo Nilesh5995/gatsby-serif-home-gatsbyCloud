@@ -8,7 +8,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "https://$GH_TOKEN@github.com/<nilesh5995>/gatsby-serif.git"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^2.0.33",
