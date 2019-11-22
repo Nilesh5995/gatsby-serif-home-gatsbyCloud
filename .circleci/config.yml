@@ -25,5 +25,5 @@ jobs:
           command: npm run build
       - run:
           name:  Deploy
-          command: npm run deploy
+          command: gatsby build --prefix-paths && gh-pages -d public
 
