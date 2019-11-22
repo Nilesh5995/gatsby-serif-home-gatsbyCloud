@@ -26,12 +26,11 @@ jobs:
       - run:
           name:  Deploy
           command: npm run deploy
-  deploy-job:
-    steps:
-      - add_ssh_keys:
+	- add_ssh_keys:
           fingerprints:
             - "SO:ME:FIN:G:ER:PR:IN:T"
 
+      
 
 
 
